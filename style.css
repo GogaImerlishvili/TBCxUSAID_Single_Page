@@ -15,9 +15,13 @@
 
 body{
     /* background:green; */
+    max-width: 100%;
 }
+
+/* Header */
+
 .header{
-    width:100%;
+    max-width:100%;
     height:83px;
     background: var(--header-color);
     display:flex;
@@ -98,4 +102,77 @@ color:var(--navbar-a-hover)
 
 .icon-mobile-nav[name="close-outline"]{
     display: none;
+}
+
+/* Main Section css */
+main{
+    max-width: 120rem;
+}
+.main-section{
+    max-width: 100%;
+    height:50vh;
+    background-color: #222424;
+    background-image: url("https://static.wixstatic.com/media/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg/v1/fill/w_1515,h_352,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg");
+    /* background-size:cover; */
+    /* background-position:center; */
+    background-repeat: no-repeat;
+}
+
+.text-box{
+    display:flex;
+flex-direction:column;
+/* width:100%; */
+margin-left: 18%;
+line-height:4em;
+}
+
+.text-box > h1{
+    margin-top: 8%;
+    font-size: 42px;
+    color: rgb(244, 244, 244);
+    font-weight:bold;
+    /* line-height:2.5em; */
+}
+
+.text-box > h2{
+    font-size: 28px;
+    color:rgb(244, 244, 244);
+}   
+
+.tech-edu-img{
+    width:100%;
+}
+
+/* Description Section */
+.description-section{
+    display:flex;
+    justify-content:center;
+    max-width:100%;
+    height:50vh;
+    background-color: #222424;
+}
+
+.description-box{
+   /* max-width:100%; */
+   width: 62%;
+    /* margin-top: 1%; */
+}
+
+.description-box > p {
+    /* width: 62%; */
+    font-size: 28px;
+    line-height: 1.6em;
+    color:white;
+    letter-spacing: 1px;
+}
+
+.btn-info{
+    border:none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--navbar-a-hover);
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-top:4%;
 }

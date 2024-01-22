@@ -1,18 +1,84 @@
 
-/* Below 1320px (Smaller desktops) */
+/* Below 1344px (Smaller desktops) */
+/* instead,1rem = 1em = 16px */
 
-@media only screen and (max-width: 1320px){
-    /* .header{
-        padding: 0 50px;
-    } */
-}
-
-@media only screen and (max-width: 1100px){
-    header{
-        /* padding: 0 15%; */
+@media only screen and (max-width: 84em){
+    /* Main section */
+    .text-box > h1{
+        font-size: 38px;
+    }
+    .text-box > h2{
+        font-size: 24px;
+        /* Description section */
+    }
+    .description-box > p{
+        font-size: 24px;
     }
 }
 
+/*Below 1120px (Smaller desktops) */
+@media only screen and (max-width: 70em){
+    .description-box > p{
+        font-size: 20px;
+    }
+}
+
+/*Below 750px (Smaller desktops) */
+@media only screen and (max-width: 47em){
+    
+    .text-box > h1{
+        font-size: 30px;
+        line-height: 1em;
+        margin-top:15%;
+    }
+    .text-box > h2{
+        font-size: 20px;
+    }
+   .description-box > p{
+    font-size: 18px;
+   }
+}
+
+/*Below 620px (Smaller desktops) */
+@media only screen and (max-width: 39em){
+    .text-box > h1{
+        font-size: 26px;
+        line-height: 1em;
+        margin-top:25%;
+    }
+    .text-box > h2{
+        font-size: 18px;
+        
+    }
+    .description-box > p{
+        font-size: 16px;
+       }
+
+       .btn-info{
+        font-size: 14px;
+       }
+}
+
+
+/*Below 470px (Smaller desktops) */
+@media only screen and (max-width: 30em){
+    .text-box > h1{
+        font-size: 22px;
+        line-height: 1em;
+        margin-top:25%;
+    }
+    .text-box > h2{
+        font-size: 14px;
+        
+    }
+    .description-box > p{
+        font-size: 14px;
+       }
+
+       .btn-info{
+        font-size: 12px;
+       }
+}
 
 @media only screen and (max-width: 980px){
     /* Mobile navigation */
