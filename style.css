@@ -535,6 +535,12 @@ width: 100%;
   padding: 0 15px;
   transiotion: all 1.5 linear;
 }
+.accordion-content .arrow-up{
+  transform:rotate(180deg)
+}
+.arrow-down{
+ training:rotate(-180deg)
+}
 /*Accordion Description Styles */
 
 .answer-title{
