@@ -65,7 +65,6 @@ accordionContent.forEach((item, index) => {
             description.style.height = "0px";
         }
         removeOpen(index)
-        console.log(item)
     })
 })
 
