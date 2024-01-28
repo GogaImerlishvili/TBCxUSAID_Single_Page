@@ -1,11 +1,11 @@
-1)Instructions on how to launch the project.
+
     git clone https://github.com/your-username/your-project.git
     cd your-project
     Install the Live Server Extension
     Open Your HTML File
     Right-click and Choose "Open with Live Server"
     View Your Live Serveრ
-2)
+
 project-root/
 │
 ├── index.html          # index.html
