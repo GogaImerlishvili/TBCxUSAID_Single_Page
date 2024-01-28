@@ -1,5 +1,6 @@
-
-    git clone https://github.com/your-username/your-project.git
+    https://tbcxusaid-website.netlify.app/
+    
+    git clone https://github.com/GogaImerlishvili/TBCxUSAID_Single_page.git
     cd your-project
     Install the Live Server Extension
     Open Your HTML File
