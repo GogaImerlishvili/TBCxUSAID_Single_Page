@@ -3,137 +3,157 @@
 /* instead,1rem = 1em = 16px */
 
 @media only screen and (max-width: 84em){
-    /* Main section */
-    .text-box > h1{
-        font-size: 38px;
-    }
-    .text-box > h2{
-        font-size: 24px;
-        /* Description section */
-    }
-    .description-box > p{
-        font-size: 24px;
-    }
+   
 }
 
 /*Below 1120px (Smaller desktops) */
-@media only screen and (max-width: 70em){
-    .description-box > p{
-        font-size: 20px;
+
+/*Below 800px (Smaller desktops) */
+@media only screen and (max-width: 769px){
+    .header{
+        max-width:100%;
+    }
+    .logo{
+        padding:0;
+
+    }.container1{
+        width:100%;
+    }
+    .main-nav-link{
+        font-size:14px;
+        padding:0;
+    }
+  
+
+    .heading-primary{
+        font-size:42px;
+        padding:0;
+    }
+    .text-box{
+        display:flex;
+    }
+    .main-section{
+        width:100%;
+        object-fit:cover;
+        background-repeat:no-repeat;
+        background-position:50% 10%;
+        background-atachment:fixed;
+    }
+    .for-tech-education{
+        padding:0;
+    }
+
+
+    /* Description Section */
+    .container{
+        width:100%;
+        padding:0;
+    }
+
+    .description-box > p {
+        margin-top:2rem;
+        font-size:24px;
+        padding:0;
+    }
+    .btn-info{
+        padding:0;
+        margin-top:2rem;
+    }
+
+    /* Trainint Course section */
+    .training-courses-section{
+        min-height:1100px
+    }
+    .title-text{
+        padding: 0;
+    }
+    .grid-container{
+        padding:0;
+        max-width:768px;
+        width:100%;
+    }
+    .grid{
+        padding:0;
+    }
+    .grid-item{
+        /* max-width:240px; */
+        height:350px;
+    }
+    .info{
+        width:100%;
+        font-size:12px;
+    }
+    /* Slider */
+    .slider-title{
+        display:flex;
+        padding:0;
+    }
+    .slider-title h3{
+       
+        margin-top:2rem;
+    }
+    .controls{
+        margin:0 auto;
     }
 }
 
-/*Below 750px (Smaller desktops) */
-@media only screen and (max-width: 47em){
-    
-    .text-box > h1{
-        font-size: 30px;
-        line-height: 1em;
-        margin-top:15%;
+/* -------- */
+/* Below 1000px (Smaller tablets) */
+/* -------- */
+
+@media only screen and (max-width: 1200px){
+    .logo{
+        padding:0;
     }
-    .text-box > h2{
-        font-size: 20px;
+    .heading-primary{
+        font-size:42px;
+        padding:0;
     }
-   .description-box > p{
-    font-size: 18px;
-   }
-}
-
-/*Below 620px (Smaller desktops) */
-@media only screen and (max-width: 39em){
-    .text-box > h1{
-        font-size: 26px;
-        line-height: 1em;
-        margin-top:25%;
+    .for-tech-education{
+        padding:0;
     }
-    .text-box > h2{
-        font-size: 18px;
-        
+    .description-box > p {
+        margin-top:2rem;
+        font-size:24px;
+        padding:0;
     }
-    .description-box > p{
-        font-size: 16px;
-       }
-
-       .btn-info{
-        font-size: 14px;
-       }
-}
-
-
-/*Below 470px (Smaller desktops) */
-@media only screen and (max-width: 30em){
-    .text-box > h1{
-        font-size: 22px;
-        line-height: 1em;
-        margin-top:25%;
+    .btn-info{
+        padding:0;
+        margin-top:2rem;
     }
-    .text-box > h2{
-        font-size: 14px;
-        
+    .title-text{
+        padding:0;
     }
-    .description-box > p{
-        font-size: 14px;
-       }
-
-       .btn-info{
-        font-size: 12px;
-       }
+    .slider-title{
+        padding:0;
+    }
 }
 
-@media only screen and (max-width: 980px){
-    /* Mobile navigation */
-   .btn-mobile-nav{
-    display: block;
-    z-index: 1000;
-   }
+/* -------- */
+/* Below 544px (Phones) */
+/* -------- */
 
-   .icon-mobile-nav{
-    width: 50px;
-    height:50px;
-    color:white;
-   }
+@media only screen and (max-width: 544px){
+    .main-nav-link{
+        font-size: 10px;
+    }
+    .heading-primary{
+        font-size: 28px;
+    }
+    .for-tech-education{
+        font-size: 24px;
+    }
+    .description-box > p {
+        margin-top:2rem;
+        font-size:20px;
+        padding:0;
+    }
 
-   .main-nav{
-    background-color: var(--header-color);
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-    transform: translateX(100%;);
-    display:flex;
-    alig-items:center;
-    justify-content: center;
-    transition: all 1s ease-in;
-    opacity:0;
-    pointer-event: none;
-    visibility:hidden;
-   }
-
-
-   .nav-open .main-nav{
-    pointer-events: auto;
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
+    .slider{
+        width:100%;
+    }
+    .slide img{
+        width:150px;
+    }
 }
 
-.nav-open .icon-mobile-nav[name="close-outline"]{
-    display: block;
-}
-
-
-.nav-open .icon-mobile-nav[name="menu-outline"]{
-    display: none;
-}
-
-.main-nav-list{
-    flex-direction: column;  
-    margin-top: 15%;
-    gap: 3rem;
-}
-
-.main-nav-link{
-    font-size: 18px;
-}
-}
